@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     public Joystick joystick;
     public float horizontalSensitivity;
     public float verticalSensitivity;
+ 
 
     public float mouseSensitivity = 1000.0f;
     public Transform playerBody;
@@ -36,4 +37,6 @@ public class CameraController : MonoBehaviour
         transform.localRotation = Quaternion.Euler(XRotation, 0.0f, 0.0f);
         playerBody.Rotate(Vector3.up * mouseX);
     }
+
+
 }
